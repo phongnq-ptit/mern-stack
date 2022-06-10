@@ -1,6 +1,6 @@
-import Payment from '../models/payment.model';
-import User from '../models/user.model';
-import Product from '../models/product.model';
+import Payment from '../models/payment.model.js';
+import User from '../models/user.model.js';
+import Product from '../models/product.model.js';
 
 
 const paymentCtrl = {

@@ -1,10 +1,11 @@
 import express from 'express';
 import cloudinary from 'cloudinary';
 import fs from 'fs';
-import auth from '../middleware/auth';
-import authAdmin from '../middleware/authAdmin';
+import auth from '../middleware/auth.js';
+import authAdmin from '../middleware/authAdmin.js';
+import dotenv from 'dotenv';
 
-require('dotenv').config();
+dotenv.config();
 
 const router = express.Router();
 

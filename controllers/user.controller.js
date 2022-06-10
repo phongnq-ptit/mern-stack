@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken'
-import User from '../models/user.model';
-import Payment from '../models/payment.model'
+import User from '../models/user.model.js';
+import Payment from '../models/payment.model.js'
 
 const userCtrl = {
     register: async (req, res) => {

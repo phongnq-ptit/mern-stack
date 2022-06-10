@@ -6,8 +6,9 @@ import fileUpload from "express-fileupload";
 import cookieParser from "cookie-parser";
 import routes from "./routes/index.route.js";
 import path from 'path';
+import dotenv from 'dotenv';
 
-require('dotenv').config();
+dotenv.config();
 
 const app = express();
 app.use(express.json());

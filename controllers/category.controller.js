@@ -1,5 +1,5 @@
-import Category from '../models/category.model';
-import Product from '../models/product.model';
+import Category from '../models/category.model.js';
+import Product from '../models/product.model.js';
 
 const categoryCtrl = {
     getAllCategory: async (req, res) => {

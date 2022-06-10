@@ -1,4 +1,4 @@
-import Product from "../models/product.model";
+import Product from "../models/product.model.js";
 
 // bo loc, sap xep, phan trang
 class APIfeatures {

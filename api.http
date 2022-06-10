@@ -1,0 +1,53 @@
+### Dang ky user
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "name":"phongnq",
+    "email": "phongnq@gmail.com",
+    "password": "987654"
+}
+
+### Dang nhap
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "email": "phongnq@gmail.com",
+    "password": "987654"
+}
+
+### rf_token
+GET http://localhost:5000/user/refresh_token
+
+### Dang xuat
+GET http://localhost:5000/user/logout
+
+### info user
+GET http://localhost:5000/user/info
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTQ4MmI0OGQzMzU5NWVlOGQ5MjU4YyIsImlhdCI6MTY1MzkwMzgwOCwiZXhwIjoxNjUzOTkwMjA4fQ.t4bF3t3Ta-FEZvyFQIgmEwpctZcHmSgZrcJbMLPZXK8
+
+### lay ra toan bo the loai
+GET http://localhost:5000/api/category
+
+### them the loai
+POST http://localhost:5000/api/category
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTQ5OWI5N2I1N2RlMjMyYzkwMDU3NyIsImlhdCI6MTY1NDE3NzY3MywiZXhwIjoxNjU0MjY0MDczfQ.YKnC-mT0pNkgO4EmFqpeEGnluNFx0F2oQzwF-jAf71E
+
+{
+    "name": "Kính"
+}
+
+### xoa the loai
+DELETE  http://localhost:5000/api/category/62949bf6c4f33fca524dd4c8
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTQ5OWI5N2I1N2RlMjMyYzkwMDU3NyIsImlhdCI6MTY1MzkwNTg2NSwiZXhwIjoxNjUzOTkyMjY1fQ.sS9Mo-3xdaC2swaZ1AJuG7l-GxH75zH4lgv_S-CI-D8
+
+### cap nhat the loai
+PUT  http://localhost:5000/api/category/62949c7ec4f33fca524dd4d0
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTQ5OWI5N2I1N2RlMjMyYzkwMDU3NyIsImlhdCI6MTY1MzkwNTg2NSwiZXhwIjoxNjUzOTkyMjY1fQ.sS9Mo-3xdaC2swaZ1AJuG7l-GxH75zH4lgv_S-CI-D8
+
+{
+    "name": "Nón"
+}
